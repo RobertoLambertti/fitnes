@@ -17,8 +17,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: $fz-default;
-  line-height: 21px;
-  font-family: $ff-ptmono;
+  line-height: $lh-default;
+  font-family: $ff-roboto;
   color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
