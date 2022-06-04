@@ -1,0 +1,35 @@
+.feedback {
+  display: flex;
+  justify-content: space-between;
+  width: 560px;
+  padding: 62px;
+
+  color: $color-default-white;
+
+  background: #1c3374;
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+}
+
+.feedback img {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+}
+
+.feddback__wrapper {
+  width: 328px;
+}
+
+.feedback h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.feedback p {
+  margin-top: 0;
+  margin-bottom: 0;
+}

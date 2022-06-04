@@ -27,11 +27,42 @@
   <div class="video" data-video>
     <a href="https://youtu.be/9TZXsZItgdw">
       <picture>
-        <source srcset="img/about-video-preview@1x.webp" type="image/webp">
-        <img src="img/about-video-preview@1x.jpg" alt="Тренажеры в белой комнате с телевизором">
+        <source srcset="img/about-video-preview@1x.webp 1x, img/about-video-preview@2x.webp 2x" type="image/webp">
+      <img src="img/about-video-preview@1x.jpg" srcset="img/about-video-preview@2x.jpg 2x" alt="Тренажеры в белой комнате с телевизором" width="364" height="228">
       </picture>
     </a>
     <button type="button" aria-label="Запустить видео"></button>
+  </div>
+  <br><br>
+  <div class="ticket">
+    <h3>С тренером</h3>
+    <p class="ticket__description">12 занятий</p>
+    <p class="ticket__price" data-price="5000">
+      <span class="ticket__price-number">5000</span>
+      <span class="visually-hidden">рублей</span>
+    </p>
+    <button class="ticket__button button button--color-sapphire" type="button">Купить абонемент</button>
+  </div>
+  <br><br>
+  <div class="ticket ticket--beneficial">
+    <h3>Дневной</h3>
+    <p class="ticket__description">с 8:00 до 17:00</p>
+    <p class="ticket__price" data-price="1700">
+      <span class="ticket__price-number">1700</span>
+      <span class="visually-hidden">рублей</span>
+    </p>
+    <button class="ticket__button button button--color-sapphire" type="button">Купить абонемент</button>
+  </div>
+  <br><br>
+  <div class="feedback">
+    <picture>
+      <source srcset="img/reviews-anna-orlova@1x.webp 1x, img/reviews-anna-orlova@2x.webp 2x" type="image/webp">
+      <img src="img/reviews-anna-orlova@1x.jpg" srcset="img/reviews-anna-orlova@2x.jpg 2x" alt="Тренажеры в белой комнате с телевизором" width="80" height="80">
+    </picture>
+    <div class="feddback__wrapper">
+      <h3>Анна Орлова</h3>
+      <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+    </div>
   </div>
 
   <script src="js/main.min.js"></script>

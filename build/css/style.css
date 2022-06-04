@@ -650,6 +650,145 @@ img {
   display: block;
 }
 
+.ticket {
+  width: 369px;
+  padding-top: 68px;
+  padding-right: 77px;
+  padding-bottom: 68px;
+  padding-left: 77px;
+  background-color: #ffffff;
+}
+
+.ticket--beneficial {
+  padding-right: 70px;
+  padding-left: 70px;
+  border: 7px solid transparent;
+  -o-border-image: -o-linear-gradient(300deg, #d10a42 1%, #00359f 100%);
+  border-image: linear-gradient(150deg, #d10a42 1%, #00359f 100%);
+  border-image-slice: 1;
+}
+
+.ticket h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 26px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.ticket__description {
+  margin-top: 0;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.ticket__price {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  text-align: center;
+  color: #103aae;
+}
+
+.ticket__price::after {
+  content: "";
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 30px;
+  height: 42px;
+  margin-left: 15px;
+  background-image: url("../img/icon-rouble.svg");
+}
+
+.ticket__price::before {
+  content: attr(data-price);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  width: 100%;
+  font-size: 100px;
+  line-height: 100px;
+  color: #e8e8e8;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  opacity: 0.5;
+}
+
+.ticket__price-number {
+  position: relative;
+  z-index: 1;
+}
+
+.ticket__button {
+  padding-right: 45px;
+  padding-left: 45px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+}
+
+.ticket--beneficial .ticket__button {
+  padding-top: 28px;
+  padding-right: 49px;
+  padding-bottom: 28px;
+  padding-left: 49px;
+  background: -o-linear-gradient(353deg, #ed0233 17%, #003eb7 95%);
+  background: linear-gradient(97deg, #ed0233 17%, #003eb7 95%);
+  border: none;
+  color: #ffffff;
+}
+
+.feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 560px;
+  padding: 62px;
+  color: #ffffff;
+  background: #1c3374;
+  -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+}
+
+.feedback img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.feddback__wrapper {
+  width: 328px;
+}
+
+.feedback h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.feedback p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
